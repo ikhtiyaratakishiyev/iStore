@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 *{
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 ;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
@@ -13,123 +14,216 @@
 html{
     font-size: 10px;
 }
+
 .nav-container{
-    flex-direction: column;
-  gap: 1em;
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+text-align: center;
+max-width: 100%;
+@media screen and (max-width:1200px){
+    gap: 0.5em;
+    font-size: 1em;
 }
-Nav{
-    padding: 1em;
-    background: #fff;
-    align-items: center;
-    display: flex;
-    font-size: 1.2em;
-    max-width: 100%;
 }
-.nav-first{
-    max-width: 144em;
+
+
+
+.first-nav{
+    text-align: center;
     justify-content: space-around;
-    // padding: 0 1em;
     display: flex;
     align-items: center;
-    gap: 1em;
+    width: 100%;
+    height: auto;
+    padding: 10px 13px;
+    font-size: 1.3em;
+    .nav-lang{
+        font-size: 1.3em;
+        display: flex;
+        gap: 1em;
+font-size: 1.3em;
+@media screen and (max-width:1200px){
+    gap: 0.5em;
+    font-size: 1em;
+}
+    }
+    ul{
+        display: flex;
+        gap: 1em;
+    }
     @media screen and (max-width:990px){
         display: none;
     }
-}
-ul{
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-    cursor: pointer;}
-    .btn-şəxsi{
-        cursor: pointer;
-        color: blue;
-        font-weight: 2em;
-        font-size: 1em;
+    .time-numbers{
+        font-size: 1.3em;
+         display: flex;
+         gap: 1em;
+         justify-content: center;
+         text-align: center;
+         @media screen and (max-width:1200px){
+             gap: 0.5em;
+             font-size: 1em;
+         }
+         .numbers{
+             color: blue;
+             &:hover{
+                 border-bottom: 1px solid blue;
+             }
+         }
         
-    }
-
-p{
-    padding:0 1.4em;
-    display: flex;
-    gap: 1em;
-}
-.nav-lang{
-    border-right: 1px solid gray;
-    padding: 0 1.4em;
+         .phone{
+             padding: 0.7em;
+             
+         }
+         .clock{
+             padding: 0.5em;
+             gap: 1em;
+         }
+     }
+     .nav-btn{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         gap: 1em;
+         color: blue;
+         font-size: 1.3em;
+         @media screen and (max-width:1200px){
+             gap: 0.5em;
+             font-size: 1em;
+         }
+         button{
+             color: blue;
+             font-size: 1.3em;
+             background: #fff;
+         }
+     }
+     .li-container{
+         display: flex;
+         gap: 1em;
+         @media screen and (max-width:1430px){
+                     flex-direction: column;
+                     font-size: 1em;
+                 }
+     }
+     .lineV{
+        width: 1px;
+        height: 30px;
+        border: 1px solid #c4c4c4; 
+        justify-content: center;
+        text-align: center;
+        
     
-}
-.numbers{
-    align-items: center;
-    color: blue;
-    &:hover{
-        border-bottom: 1px solid blue;
     }
-}
-.nav-right{
-    gap: 1em;
-    display: flex;
-    align-items: center;
-    border-left: 1px solid gray;
-    padding: 0 1em;
-    justify-content: space-between;
-}
-.nav-left{
-   gap: 0.8em;
-    list-style: none;
-    display: flex;
-    @media screen and (max-width:1430px){
-        flex-direction: column;
+    li{
+        font-size: 1.3em;
+        display: flex;
+        gap: 1em;
+        list-style: none;
+        &:hover{
+                    color: blue;
+                    transition: .3s;
+                }
     }
-   li{
-    &:hover{
-        color: blue;
-        transition: .3s;
-    }
-   }
-  
 }
 
 
-.time{
-    display: flex;
-    align-items: center;
-}
-.nav-btn{
-    display: flex;
-    align-items: center;
-    gap: 1em;  
- 
-}
-.second-nav{
+// second nav
+
+.Second-nav{
     align-items: center;
     display: flex;
     background: #000;
     color:#a6a5a5;
     font-weight: 600;
     font-size: 1.6em; 
-    padding: 1.5em 0.8em;
+    padding: 1.5em 3em;
     transition: color .2s ease;
-    justify-content: space-between;
+    gap: 5em;
+   
     @media screen and (max-width:1430px){
         font-size: 1em;
 
     }
+    .lineV{
+        width: 1px;
+        height: 30px;
+        border: 1px solid #c4c4c4; 
+        justify-content: center;
+        text-align: center;
+        
+    
+    }
+    .logo{
+        // padding-left: 3em;
+        gap: .5em;
+        display: flex;
+        font-weight: 900;
+        text-align: center;
+        h1{
+            color: #fff;
+            font-size: 2.5em;
+        }
+    
+            font-size: 1.5em;
+        
+        .lineWhite{
+            height: 3em;
+            width: .1em;
+            border: .1em solid #fff;
+         }
+    }
+    .products-services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul{
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            text-align: center;
+            li{
+                font-size: 1.3em;
+            }
+           
+            .icon{
+               
+                font-size: 1.6em;
+            }
+        }
+       
+    }
+    .second-navbar{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 16em;
+        .icons{
+         
+            font-size: 1.6em;
+            gap: 1em;
+            
+        }
+    }
 }
-.products{
-    cursor: pointer;
-   color:gray;
-   ul {
-    li{
-    gap: 2em;
-   }
-}
-}
-h1{
-    color: #fff;
-    border-right: 1px solid #fff;
-  padding: 0 0.5em;
-}
+
+
+// .products{
+//     cursor: pointer;
+//    color:gray;
+//    ul {
+//     li{
+//     gap: 2em;
+//    }
+// }
+// }
+// h1{
+//     color: #fff;
+//     // border-right: 1px solid #fff;
+//   padding: 0 0.5em;
+// }
 .icon{
     justify-content: center;
     align-items: center;
@@ -142,49 +236,49 @@ h1{
 .apple{
     padding-left: .5em;
 }
-.second-nav-left{
-    display: flex;
-    .logo{
-        display: flex;
-        align-items: center;
-        .icon{
-            display: none;
-            @media screen and (max-width:990px){
-                display: flex;
-            }
-        }
-    }
-}
-.second-nav{
-    @media screen and (max-width:990px){
-        justify-content: space-around;
-    }
-}
-.second-nav-right{
-    align-items: center;
-    display: flex;
-    gap: 1em;
-    .services{
-        border-left: 1px solid #a6a5a5; 
-        padding: 0 1em;
-        li{
-            @media screen and (max-width:990px){
-                display: none;
-            }
-        }
+// .second-nav-left{
+//     display: flex;
+//     .logo{
+//         display: flex;
+//         align-items: center;
+//         .icon{
+//             display: none;
+//             @media screen and (max-width:990px){
+//                 display: flex;
+//             }
+//         }
+//     }
+// }
+// .second-nav{
+//     @media screen and (max-width:990px){
+//         justify-content: space-around;
+//     }
+// }
+// .second-nav-right{
+//     align-items: center;
+//     display: flex;
+//     gap: 1em;
+//     .services{
+//         border-left: 1px solid #a6a5a5; 
+//         padding: 0 1em;
+//         li{
+//             @media screen and (max-width:990px){
+//                 display: none;
+//             }
+//         }
        
-    }
-    .products{
-        li{
-            @media screen and (max-width:990px){
-                display: none;
-            }
-        }
+//     }
+//     .products{
+//         li{
+//             @media screen and (max-width:990px){
+//                 display: none;
+//             }
+//         }
        
-    }
-    .for-icons{
-        padding-left: 2em;
-        justify-content: right;
+//     }
+//     .for-icons{
+//         padding-left: 2em;
+//         justify-content: right;
       
-    }
-}
+//     }
+// }
