@@ -36,9 +36,7 @@ const Nav = () => {
                 <div className="lineV"></div>
               </ul>
             </div>
-          </div>
-
-          <div className="time-numbers">
+            <div className="time-numbers">
             <i className="clock">
               {" "}
               <FaRegClock />{" "}
@@ -54,6 +52,9 @@ const Nav = () => {
               +994(50) 776 00 50{" "}
             </span>
           </div>
+          </div>
+
+        
 
           <div className="nav-lang">
             <span>AZ</span>

@@ -1,0 +1,35 @@
+button{
+    border: 2px solid gray;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    color: gray;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.slide-container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+   
+    .description{
+        font-size: 24px;
+        gap: 30px;
+        font-weight: 400;
+        padding: 100px;
+
+    }
+    .mack{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap: 40px;
+        padding: 30px 100px;
+        min-height: 100px;
+       
+        .discount{
+            color: rgb(76, 164, 219);
+        }
+    }
+    
+}
