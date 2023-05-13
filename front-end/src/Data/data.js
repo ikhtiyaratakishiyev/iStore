@@ -1,10 +1,10 @@
-import Airpods from "../Assets/Image/Airpods.jpg"
+import airpods from "../Assets/Image/Airpods.jpg"
 import applewatch from "../Assets/Image/applewatch.jpg"
 import Iphone14 from "../Assets/Image/Iphone14.jpg"
 import iPhoneGold from "../Assets/Image/iPhoneGold.jpg"
 import mackbook from "../Assets/Image/mackbook.jpg"
 
-
+import airpods2 from "../Assets/Image/airpods2.jpg"
 
 
 
@@ -12,8 +12,8 @@ export const slider = [
 
         {
             "id": "1",
-            "name":"AirPods Pro",
-            "img": Airpods,
+            "name":"AirPods pro",
+            "img": airpods,
             "Title": "Yenilənmənin Səsi ",
             "Period": "Yalnız 14 mayadək",
             "Description": "70 AZN-dək qənaət",
@@ -62,4 +62,13 @@ export const slider = [
         },
         
 
+    ]
+
+    export const Cards2 =[
+        {
+            "id": 1,
+            "image":airpods2,
+            "title": "Airpods.",
+            "description": "Heç bir naqil olmadan.Hec bir çətinlik olmadan."
+        }
     ]

@@ -9,7 +9,7 @@ import { FaApple } from "react-icons/fa";
 import { RiScales3Fill } from "react-icons/ri";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
-// import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import Apple from "../../Assets/Image/Apple.gif";
 
 const Nav = () => {
@@ -75,6 +75,9 @@ const Nav = () => {
 
         <div className="Second-nav">
           <div className="logo">
+            <div className="menu">
+              <AiOutlineMenu/>
+            </div>
             <h1>ISpace</h1>
             {/* <AiOutlineMenu/> */}
             <div className="lineWhite"></div>
@@ -86,16 +89,14 @@ const Nav = () => {
               </p>
             </div>
           </div>
+
          <div className="second-navbar">
 
         
           <div className="products-services">
             <ul>
-              <i className="icon">
-                {" "}
-                <FaSistrix />
-              </i>
-
+        
+              <FaSistrix />
               <li>Mac</li>
               <li>iPad</li>
               <li>iPhone</li>
@@ -112,22 +113,14 @@ const Nav = () => {
             </ul>
           </div>
 
-          <div className="icons">
-            <i className="icon">
-              {" "}
-              <RiScales3Fill />
-            </i>
-            <i className="icon">
-              <AiOutlineHeart />
-            </i>
-            <i className="icon">
-              {" "}
-              <FaShoppingCart />
-            </i>
-          </div>
 
           </div>
           
+          <div className="icons">           
+              <RiScales3Fill />                 
+              <AiOutlineHeart />
+              <FaShoppingCart />
+          </div>
         </div>
       </div>
     </nav>
